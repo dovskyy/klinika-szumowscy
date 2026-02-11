@@ -2,7 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Star, CheckCircle2 } from 'lucide-react';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  onBookingOpen: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ onBookingOpen }) => {
   return (
     <section className="relative min-h-[90vh] flex items-center pt-24 pb-12 overflow-hidden bg-gradient-to-br from-white via-medical-50 to-white">
       
@@ -22,9 +26,9 @@ const Hero: React.FC = () => {
               className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md shadow-slate-200/50 border border-slate-100"
             >
               <div className="flex -space-x-2">
-                <div className="w-6 h-6 rounded-full bg-green-500 border-2 border-white flex items-center justify-center text-[10px] text-white font-bold">G</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="w-5 h-5" />
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 ml-1">
                 <span className="font-bold text-slate-800 text-sm">4.9</span>
                 <div className="flex text-yellow-400">
                   {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="currentColor" />)}
@@ -58,10 +62,13 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 pt-2"
             >
-              <a href="#contact" className="inline-flex items-center justify-center px-8 py-4 bg-medical-500 text-white font-semibold rounded-xl hover:bg-medical-600 transition-colors shadow-lg shadow-medical-500/30">
+              <button 
+                onClick={onBookingOpen}
+                className="inline-flex items-center justify-center px-8 py-4 bg-medical-500 text-white font-semibold rounded-xl hover:bg-medical-600 transition-colors shadow-lg shadow-medical-500/30"
+              >
                 Umów wizytę online
                 <ArrowRight className="ml-2" size={20} />
-              </a>
+              </button>
               <a href="#pricing" className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-700 font-semibold rounded-xl border border-slate-200 hover:border-medical-500 hover:text-medical-600 transition-colors">
                 Sprawdź cennik
               </a>
@@ -93,7 +100,7 @@ const Hero: React.FC = () => {
               className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-medical-900/10 border-4 border-white"
             >
                <img 
-                 src="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&fit=crop&q=80&w=1200" 
+                 src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200" 
                  alt="Dentist and Patient" 
                  className="w-full h-auto object-cover"
                />

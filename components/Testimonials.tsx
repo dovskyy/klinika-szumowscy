@@ -52,10 +52,13 @@ const Testimonials: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex text-yellow-400 mb-4">
-                {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} size={14} fill="currentColor" />
-                ))}
+              <div className="flex text-yellow-400 mb-4 items-center justify-between">
+                <div className="flex">
+                  {[...Array(review.rating)].map((_, i) => (
+                    <Star key={i} size={14} fill="currentColor" />
+                  ))}
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Review" className="w-4 h-4 opacity-80" />
               </div>
 
               <p className="text-slate-600 text-sm leading-relaxed">

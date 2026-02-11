@@ -6,10 +6,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface ServiceModalProps {
   service: Service | null;
   onClose: () => void;
+  onBookingOpen: () => void;
 }
 
-const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose }) => {
+const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, onBookingOpen }) => {
   if (!service) return null;
+
+  const handleBooking = () => {
+    onClose();
+    onBookingOpen();
+  };
 
   return (
     <AnimatePresence>
@@ -82,7 +88,10 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose }) => {
               </ul>
             </div>
 
-            <button className="w-full py-3.5 bg-slate-900 hover:bg-medical-600 text-white font-medium rounded-lg transition-colors text-center shadow-lg shadow-slate-900/10">
+            <button 
+              onClick={handleBooking}
+              className="w-full py-3.5 bg-slate-900 hover:bg-medical-600 text-white font-medium rounded-lg transition-colors text-center shadow-lg shadow-slate-900/10"
+            >
               Umów Konsultację
             </button>
           </div>

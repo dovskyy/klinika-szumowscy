@@ -7,72 +7,72 @@ export const SERVICES: Service[] = [
     title: 'Stomatologia Zachowawcza',
     shortDescription: 'Leczenie próchnicy i estetyczna odbudowa.',
     fullDescription: 'Stomatologia zachowawcza to fundament zdrowego uśmiechu. Skupiamy się na profilaktyce oraz leczeniu próchnicy w jej wczesnych i zaawansowanych stadiach. Naszym celem jest zachowanie jak największej ilości naturalnej tkanki zęba, przy użyciu nowoczesnych materiałów kompozytowych, które idealnie imitują szkliwo.',
-    imageUrl: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800',
-    icon: 'ShieldCheck'
+    imageUrl: '/assets/stomatologia-zachowawcza.jpg',
+    icon: ''
   },
   {
     id: 'protetyka',
     title: 'Protetyka Cyfrowa',
     shortDescription: 'Korony, mosty i licówki w technologii CAD/CAM.',
     fullDescription: 'Protetyka to sztuka odtwarzania warunków zgryzowych i estetyki po utracie zębów naturalnych. Oferujemy pełen zakres rozwiązań: od licówek porcelanowych, przez korony i mosty cyfrowe, aż po protezy szkieletowe. Współpracujemy z najlepszymi pracowniami technicznymi w Polsce.',
-    imageUrl: 'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=800',
-    icon: 'Crown'
+    imageUrl: '/assets/protetyka-cyfrowa.webp',
+    icon: ''
   },
   {
     id: 'endodoncja',
     title: 'Endodoncja Mikroskopowa',
     shortDescription: 'Precyzyjne leczenie kanałowe.',
     fullDescription: 'Nowoczesna endodoncja to leczenie zębów, które dawniej skazane były na usunięcie. Dzięki pracy pod mikroskopem operacyjnym jesteśmy w stanie odnaleźć i wyleczyć nawet najbardziej zakrzywione kanały zębowe, eliminując ból i stan zapalny.',
-    imageUrl: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=800',
-    icon: 'Microscope'
+    imageUrl: '/assets/endodoncja.jpg',
+    icon: ''
   },
   {
     id: 'chirurgia',
     title: 'Chirurgia Stomatologiczna',
     shortDescription: 'Ekstrakcje i regeneracja kości.',
     fullDescription: 'Chirurgia stomatologiczna w naszej klinice to nie tylko ekstrakcje zębów. Wykonujemy skomplikowane zabiegi regeneracji kości, podniesienia dna zatoki szczękowej czy resekcji wierzchołków korzeni. Wszystko w znieczuleniu, z pełnym poszanowaniem komfortu pacjenta.',
-    imageUrl: 'https://images.unsplash.com/photo-1579684385180-1ea67251dd24?auto=format&fit=crop&q=80&w=800',
-    icon: 'Syringe'
+    imageUrl: '/assets/chirurgia.jpg',
+    icon: ''
   },
   {
     id: 'implantologia',
     title: 'Implantologia',
     shortDescription: 'Trwałe uzupełnienie braków zębowych.',
     fullDescription: 'Implanty to najdoskonalsza metoda zastępowania utraconych zębów. Wszczepiamy implanty tytanowe i cyrkonowe, na których odbudowujemy korony. To rozwiązanie, które funkcjonalnie i estetycznie nie różni się od naturalnych zębów.',
-    imageUrl: 'https://images.unsplash.com/photo-1629909615184-74f495363b63?auto=format&fit=crop&q=80&w=800',
-    icon: 'Anchor'
+    imageUrl: '/assets/implantologia.jpg',
+    icon: ''
   },
   {
     id: 'profilaktyka',
     title: 'Higienizacja i Profilaktyka',
     shortDescription: 'Profesjonalne czyszczenie i edukacja.',
     fullDescription: 'Profesjonalna higienizacja to podstawa. Skaling, piaskowanie i fluoryzacja wykonywane przez nasze dyplomowane higienistki to klucz do utrzymania zdrowia jamy ustnej na długie lata.',
-    imageUrl: 'https://images.unsplash.com/photo-1570215778437-d278b7b2039a?auto=format&fit=crop&q=80&w=800',
-    icon: 'Sparkles'
+    imageUrl: '/assets/profilaktyka.jpg',
+    icon: ''
   },
     {
     id: 'dziecieca',
     title: 'Stomatologia Dziecięca',
     shortDescription: 'Opieka adaptacyjna dla najmłodszych.',
     fullDescription: 'Wizyty adaptacyjne i leczenie w atmosferze zabawy. Rozumiemy psychikę małego pacjenta. Oferujemy lakowanie, lakierowanie oraz leczenie zębów mlecznych, budując pozytywne skojarzenia z dentystą od najmłodszych lat.',
-    imageUrl: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800',
-    icon: 'Baby'
+    imageUrl: '/assets/stomatologia-dziecieca.jpg',
+    icon: ''
   },
     {
     id: 'periodontologia',
     title: 'Periodontologia',
     shortDescription: 'Leczenie chorób dziąseł.',
     fullDescription: 'Zdrowe zęby to także zdrowe dziąsła. Zajmujemy się leczeniem chorób przyzębia (paradontozy), korektą uśmiechu dziąsłowego oraz zabiegami pokrywania recesji dziąsłowych.',
-    imageUrl: 'https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&fit=crop&q=80&w=800',
-    icon: 'HeartPulse'
+    imageUrl: '/assets/periodontologia.jpg',
+    icon: ''
   },
     {
     id: 'radiologia',
     title: 'Radiologia 3D (CBCT)',
     shortDescription: 'Precyzyjna diagnostyka na miejscu.',
     fullDescription: 'Dysponujemy własną pracownią RTG i tomografii komputerowej (CBCT). Cyfrowa diagnostyka pozwala nam na precyzyjne planowanie leczenia implantologicznego, endodontycznego i chirurgicznego na miejscu.',
-    imageUrl: 'https://images.unsplash.com/photo-1583912267652-3c356499388c?auto=format&fit=crop&q=80&w=800',
-    icon: 'Scan'
+    imageUrl: '/assets/radiologia.jpg',
+    icon: ''
   }
 ];
 

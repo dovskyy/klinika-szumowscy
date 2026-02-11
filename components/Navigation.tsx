@@ -3,9 +3,18 @@ import { NAV_ITEMS } from '../constants';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const Navigation: React.FC = () => {
+interface NavigationProps {
+  onBookingOpen: () => void;
+}
+
+const Navigation: React.FC<NavigationProps> = ({ onBookingOpen }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleBookingClick = () => {
+    setMobileMenuOpen(false);
+    onBookingOpen();
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,12 +66,12 @@ const Navigation: React.FC = () => {
               <span>61 800 00 00</span>
             </a>
 
-            <a 
-              href="#contact" 
+            <button 
+              onClick={onBookingOpen}
               className="px-6 py-2.5 bg-medical-500 hover:bg-medical-600 text-white text-sm font-semibold rounded-full transition-all shadow-lg shadow-medical-500/20 transform hover:-translate-y-0.5"
             >
               Umów Wizytę
-            </a>
+            </button>
           </div>
 
           {/* Mobile Toggle */}
@@ -95,13 +104,12 @@ const Navigation: React.FC = () => {
                 {item.label}
               </a>
             ))}
-             <a 
-              href="#contact" 
-              onClick={() => setMobileMenuOpen(false)}
+             <button 
+              onClick={handleBookingClick}
               className="mt-8 w-full py-4 bg-medical-500 text-white text-center rounded-xl font-semibold text-lg shadow-lg shadow-medical-500/30"
             >
               Zarezerwuj Termin
-            </a>
+            </button>
           </motion.div>
         )}
       </AnimatePresence>

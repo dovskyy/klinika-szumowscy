@@ -1,6 +1,7 @@
 import React from 'react';
 import { DOCTORS } from '../constants';
 import { Award } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Team: React.FC = () => {
   return (
@@ -15,9 +16,35 @@ const Team: React.FC = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {DOCTORS.map((doctor) => (
-            <div key={doctor.id} className="group">
+        {/* Mobile Scroll Indicator */}
+        <div className="flex md:hidden justify-center items-center gap-3 mb-6">
+          <div className="w-16 h-1 bg-slate-100 rounded-full overflow-hidden">
+            <motion.div
+              className="h-full bg-medical-500"
+              animate={{
+                x: [-64, 64],
+                opacity: [0, 1, 0]
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+          </div>
+          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Przesuń w bok</span>
+        </div>
+
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible pb-8 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
+          {DOCTORS.map((doctor, index) => (
+            <motion.div
+              key={doctor.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1, duration: 0.8, ease: [0.21, 0.45, 0.32, 0.9] }}
+              viewport={{ once: true }}
+              className="group min-w-[75vw] sm:min-w-[320px] md:min-w-0 snap-center"
+            >
               <div className="relative overflow-hidden rounded-2xl mb-6 bg-slate-100 aspect-[3/4]">
                 <img 
                   src={doctor.imageUrl} 
@@ -48,9 +75,10 @@ const Team: React.FC = () => {
                  <Award size={14} />
                  <span>Certyfikowany Specjalista</span>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );

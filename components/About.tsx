@@ -10,7 +10,7 @@ const About: React.FC = () => {
           <div className="w-full lg:w-1/2">
              <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" 
+                  src="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&fit=crop&q=80&w=800" 
                   className="rounded-3xl shadow-2xl relative z-10" 
                   alt="Modern Dental Clinic Interior" 
                 />
