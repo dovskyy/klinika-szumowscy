@@ -7,7 +7,7 @@ export const SERVICES: Service[] = [
     title: 'Stomatologia Zachowawcza',
     shortDescription: 'Leczenie próchnicy i estetyczna odbudowa.',
     fullDescription: 'Stomatologia zachowawcza to fundament zdrowego uśmiechu. Skupiamy się na profilaktyce oraz leczeniu próchnicy w jej wczesnych i zaawansowanych stadiach. Naszym celem jest zachowanie jak największej ilości naturalnej tkanki zęba, przy użyciu nowoczesnych materiałów kompozytowych, które idealnie imitują szkliwo.',
-    imageUrl: './assets/stomatologia-zachowawcza.jpg',
+    imageUrl: './assets/stomatologia-zachowawcza.webp',
     icon: ''
   },
   {
@@ -23,7 +23,7 @@ export const SERVICES: Service[] = [
     title: 'Endodoncja Mikroskopowa',
     shortDescription: 'Precyzyjne leczenie kanałowe.',
     fullDescription: 'Nowoczesna endodoncja to leczenie zębów, które dawniej skazane były na usunięcie. Dzięki pracy pod mikroskopem operacyjnym jesteśmy w stanie odnaleźć i wyleczyć nawet najbardziej zakrzywione kanały zębowe, eliminując ból i stan zapalny.',
-    imageUrl: './assets/endodoncja.jpg',
+    imageUrl: './assets/endodoncja.webp',
     icon: ''
   },
   {
@@ -31,7 +31,7 @@ export const SERVICES: Service[] = [
     title: 'Chirurgia Stomatologiczna',
     shortDescription: 'Ekstrakcje i regeneracja kości.',
     fullDescription: 'Chirurgia stomatologiczna w naszej klinice to nie tylko ekstrakcje zębów. Wykonujemy skomplikowane zabiegi regeneracji kości, podniesienia dna zatoki szczękowej czy resekcji wierzchołków korzeni. Wszystko w znieczuleniu, z pełnym poszanowaniem komfortu pacjenta.',
-    imageUrl: './assets/chirurgia.jpg',
+    imageUrl: './assets/chirurgia.webp',
     icon: ''
   },
   {
@@ -39,7 +39,7 @@ export const SERVICES: Service[] = [
     title: 'Implantologia',
     shortDescription: 'Trwałe uzupełnienie braków zębowych.',
     fullDescription: 'Implanty to najdoskonalsza metoda zastępowania utraconych zębów. Wszczepiamy implanty tytanowe i cyrkonowe, na których odbudowujemy korony. To rozwiązanie, które funkcjonalnie i estetycznie nie różni się od naturalnych zębów.',
-    imageUrl: './assets/implantologia.jpg',
+    imageUrl: './assets/implantologia.webp',
     icon: ''
   },
   {
@@ -47,7 +47,7 @@ export const SERVICES: Service[] = [
     title: 'Higienizacja i Profilaktyka',
     shortDescription: 'Profesjonalne czyszczenie i edukacja.',
     fullDescription: 'Profesjonalna higienizacja to podstawa. Skaling, piaskowanie i fluoryzacja wykonywane przez nasze dyplomowane higienistki to klucz do utrzymania zdrowia jamy ustnej na długie lata.',
-    imageUrl: './assets/profilaktyka.jpg',
+    imageUrl: './assets/profilaktyka.webp',
     icon: ''
   },
     {
@@ -55,7 +55,7 @@ export const SERVICES: Service[] = [
     title: 'Stomatologia Dziecięca',
     shortDescription: 'Opieka adaptacyjna dla najmłodszych.',
     fullDescription: 'Wizyty adaptacyjne i leczenie w atmosferze zabawy. Rozumiemy psychikę małego pacjenta. Oferujemy lakowanie, lakierowanie oraz leczenie zębów mlecznych, budując pozytywne skojarzenia z dentystą od najmłodszych lat.',
-    imageUrl: './assets/stomatologia-dziecieca.jpg',
+    imageUrl: './assets/stomatologia-dziecieca.webp',
     icon: ''
   },
     {
@@ -63,7 +63,7 @@ export const SERVICES: Service[] = [
     title: 'Periodontologia',
     shortDescription: 'Leczenie chorób dziąseł.',
     fullDescription: 'Zdrowe zęby to także zdrowe dziąsła. Zajmujemy się leczeniem chorób przyzębia (paradontozy), korektą uśmiechu dziąsłowego oraz zabiegami pokrywania recesji dziąsłowych.',
-    imageUrl: './assets/periodontologia.jpg',
+    imageUrl: './assets/periodontologia.webp',
     icon: ''
   },
     {
@@ -71,7 +71,7 @@ export const SERVICES: Service[] = [
     title: 'Radiologia 3D (CBCT)',
     shortDescription: 'Precyzyjna diagnostyka na miejscu.',
     fullDescription: 'Dysponujemy własną pracownią RTG i tomografii komputerowej (CBCT). Cyfrowa diagnostyka pozwala nam na precyzyjne planowanie leczenia implantologicznego, endodontycznego i chirurgicznego na miejscu.',
-    imageUrl: './assets/radiologia.jpg',
+    imageUrl: './assets/radiologia.webp',
     icon: ''
   }
 ];
