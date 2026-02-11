@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfix: use relative paths for assets to fix GitHub Pages image loading\n\nChanged /assets/ to ./assets/ in constants.tsx so images resolve\ncorrectly when served from a subdirectory on GitHub Pages.\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git pull:*)"
+    ]
+  }
+}
