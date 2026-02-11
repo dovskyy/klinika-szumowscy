@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
-    base: './', // Ensures assets are linked relatively, essential for GitHub Pages
+    base: '/klinika-szumowscy/', // Base path for GitHub Pages project site
     build: {
         outDir: 'dist',
         emptyOutDir: true,
